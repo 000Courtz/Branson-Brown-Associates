@@ -1,0 +1,179 @@
+/* Reset */
+
+* {
+  box-sizing: border-box;
+  /* border: 1px solid green; */
+  margin: 0;
+  padding: 0;
+}
+
+/* Modular */
+
+.center {text-align:center;
+}
+.left {text-align:left;
+}
+
+.right {text-align:right;
+}
+
+.padding-0 {padding:0}
+
+.padding-2 {padding:2%}
+
+.darklist {
+  background-color: #333;
+  color: white;
+  padding:2%;
+}
+
+/* headers, footers and sections */
+
+footer, section {padding:2% 10%
+ }
+
+header {
+  background-image: url("../images/blackglebe.jpg");
+  background-position: 69% 20%;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 65vh;
+  padding: 25% 10%;
+}
+
+header h2{
+  color: white;
+  /* padding-left: 0%; */
+}
+
+section {
+
+}
+
+footer {
+  background-color: #333;
+  color: white;
+
+}
+
+footer h2, footer a{
+  color:white;
+}
+
+footer .fa{
+  font-size: 2.3rem;
+  transition: .5s;
+}
+
+footer .fa:hover{
+  transform:scale(1.2);
+}
+
+/* Typography */
+
+body {font-family: 'Playfair Display', serif;
+color: grey;
+}
+
+h1, h2, h3,{font-family: 'Muli', sans-serif;
+}
+
+h1 {font-size:2.5rem
+}
+
+h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+h3 {font-size: 1.5rem}
+
+span{
+  color:black;
+}
+
+li{
+  padding:4px;
+  list-style-position: inside;
+}
+
+/*  Forms */
+
+input, textarea {
+  display:block;
+  width: 100%;
+  padding: 2%;
+  margin: 1% auto;
+}
+
+textarea {
+  min-height: 10vh;
+}
+
+input[type=submit] {
+  background-color: black;
+  color:white;
+  transition:0.2s;
+}
+
+input[type=submit]:hover {
+  background-color: grey;
+}
+
+/* Specific */
+
+[class*=bg] {
+  background-position: center;
+  background-size:cover;
+  min-height: 25vh;
+}
+
+img{
+  border-radius: 50%;
+  max-width: 100%;
+}
+
+.road-bg {
+  background-image: url("../images/roadinfra.jpg");
+}
+
+.steelrig-bg {
+  background-image:url("../images/steelrig.jpg");
+  background-position: 78% 12%;
+}
+
+.windy-bg {
+  background-image:url("../images/windfarm.jpg");
+  background-position: 58% 51%;
+  color:white;
+}
+
+.quotationmark {
+  font-size:4rem;
+  color: grey;
+}
+
+/* media queries  */
+
+@media (max-width:48em){
+  [class*=bg] {
+    min-height: 100vw;
+
+  }
+  .mobile-hide {display:none;
+  }
+
+
+/* to flip the images when screen shrinks */
+
+.mobile-switch {
+  flex-direction: column-reverse;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+
+
+}
